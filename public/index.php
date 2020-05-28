@@ -430,7 +430,7 @@
 			</div>	
 		</div>
 		<div class="col-8 col-md-6">
-			<form id="formulario_contacto"  action="correo.php"  role="form" method="POST"> <!-- action="/libs/send.php" -->
+			<form id="formulario_contacto"   action="/libs/send.php"   role="form" method="POST"> 
 				<div class="form-group">
 					<label for="nombre" class="text-primary txtN15">Nombre</label>
 					<input id="nombre" type="text" class="form-control" name="FirstName" placeholder="Dinos cómo te llamas" required>
