@@ -43,11 +43,12 @@
 
 	<!-- Logo sticky -->
 	<div class="container-fluid sticky-top bg-white">
-		<div class="row">
+	<!-- 	<div class="row">
 			<div class="col-12 px-5 mt-md-4">
 				<img src="images/Logo Tampico34_ espacio de coworking en Madrid.png" alt="Tampico 34 - Espacio de coworking en Madrid">
 			</div>
-		</div>
+		</div> -->
+		<?php include 'partials/menu.php' ?>
 	</div>
 
 	<!-- Banner principal -->
