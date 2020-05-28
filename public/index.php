@@ -44,12 +44,12 @@
 	<!-- Logo sticky -->
 	<div class="container-fluid sticky-top bg-white">
 		<div class="row">
-			<div class="col-12 px-5 mt-md-4">
+			<div class="col-4 px-5 mt-md-3">
 				<img src="images/Logo Tampico34_ espacio de coworking en Madrid.png" alt="Tampico 34 - Espacio de coworking en Madrid">
 			</div>
+			
 		</div>
 	</div>
-
 	<!-- Banner principal -->
 	<div class="jumbotron jumbotron-fluid big-banner">
 		<div class="container-fluid">
@@ -425,11 +425,12 @@
 
 	<!-- Formulario -->
 	<div class="row">
-		<div class="col-12 col-md-5 offset-md-1 mb-5">
-			<img src="images/plano-situacion-Tampico34-Madrid.png" alt="" width=100%>
+		<div class="col-4 col-md-6">
+			<div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px">
+			</div>	
 		</div>
-		<div class="col-12 col-md-5">
-			<form id="formulario_contacto" action="/libs/send.php" role="form" method="POST">
+		<div class="col-8 col-md-6">
+			<form id="formulario_contacto"  action="correo.php"  role="form" method="POST"> <!-- action="/libs/send.php" -->
 				<div class="form-group">
 					<label for="nombre" class="text-primary txtN15">Nombre</label>
 					<input id="nombre" type="text" class="form-control" name="FirstName" placeholder="Dinos cómo te llamas" required>
@@ -509,6 +510,34 @@
       'resizeDuration': 600,
       'wrapAround': true
     })
+</script>
+
+<!-- google maps-->
+<script src="https://maps.google.com/maps/api/js"></script>
+
+<!-- Google Maps settings -->
+<script>
+  // Regular map
+  function regular_map() {
+    var var_location = new google.maps.LatLng(40.443830, -3.634043);
+
+    var var_mapoptions = {
+      center: var_location,
+      zoom: 16
+    };
+
+    var var_map = new google.maps.Map(document.getElementById("map-container"),
+      var_mapoptions);
+
+    var var_marker = new google.maps.Marker({
+      position: var_location,
+      map: var_map,
+      title: "tampico34"
+    });
+  }
+
+  // Initialize maps
+  google.maps.event.addDomListener(window, 'load', regular_map);
 </script>
 
 <!-- Smooth scroll -->
