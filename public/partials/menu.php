@@ -10,10 +10,10 @@
 	</nav>
 	<div class="collapse navbar-collapse float-right" id="navbarToggleExternalContent">
 		<div>
-			<a class="nav-link float-left" href="index.php">Características</a>
-			<a class="nav-link float-left" href="index.php">Oficinas</a>
-			<a class="nav-link float-left" href="index.php">Precios</a>
-			<a class="nav-link float-left" href="index.php">Contacto</a>
+			<a data-scroll class="nav-link float-md-left" href="#Caracteristicas">Características</a>
+			<a class="nav-link float-md-left" href="#Oficinas">Oficinas</a>
+			<a class="nav-link float-md-left" href="#Precios">Precios</a>
+			<a class="nav-link float-md-left" href="#Contacto">Contacto</a>
  		</div>
 	</div>
 </div>

@@ -36,6 +36,9 @@
 	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<!-- Smooth scroll partials -->
+	<script type="text/javascript" src="partials/smooth-scroll.min.js"></script>
+
 </head>
 
 
@@ -118,7 +121,7 @@
 
 
 	<!-- Caracteristicas -->
-	<div class="row no-gutters">
+	<div id="Caracteristicas" class="row no-gutters">
 		<div class="col-12 col-md-6 bg-sala_reuniones my-5 text-center">
 			<h3 class="text-white d-md-none mt-5 pt-5 txtH30">CARACTERÍSTICAS</h3>			
 		</div>
@@ -157,7 +160,7 @@
 	<div class="container">
 
 		<!-- Oficinas -->
-		<div class="row">
+		<div class="row" id="Oficinas">
 			<div class="col text-center py-5">
 				<h1 class="text-primary txtH40">OFICINAS</h1>
 				<p class="text-primary txtN18">Encuentra el espacio perfecto para tu equipo</p>
@@ -315,7 +318,7 @@
 
 
 		<!-- Precios -->
-		<div class="row">
+		<div class="row" id="Precios">
 			<div class="col text-center py-5">
 				<h1 class="text-primary txtH40">PRECIOS</h1>
 				<p class="text-primary txtN18">Nuestras ofertas</p>
@@ -418,7 +421,7 @@
 
 
 	<!-- Contacto -->
-	<div class="row">
+	<div class="row" id="Contacto">
 		<div class="col text-center py-5 my-3">
 			<h1 class="text-primary display-5">CONTACTO</h1>
 		</div>
