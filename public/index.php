@@ -42,12 +42,15 @@
 <body>
 
 	<!-- Logo sticky -->
-	<div class="container-fluid sticky-top bg-white">
-		<div class="row">
-			<div class="col-12 px-5 mt-md-4">
-				<img src="images/Logo Tampico34_ espacio de coworking en Madrid.png" alt="Tampico 34 - Espacio de coworking en Madrid">
+	<!-- 	<div class="container-fluid sticky-top bg-white">
+			<div class="row">
+				<div class="col-12 px-5 mt-md-4">
+					<img src="images/Logo Tampico34_ espacio de coworking en Madrid.png" alt="Tampico 34 - Espacio de coworking en Madrid">
+				</div>
 			</div>
-		</div>
+		</div> -->
+	<div class="row">
+		<?php include "partials/menu.php" ?>
 	</div>
 
 	<!-- Banner principal -->
@@ -426,7 +429,8 @@
 	<!-- Formulario -->
 	<div class="row">
 		<div class="col-12 col-md-5 offset-md-1 mb-5">
-			<img src="images/plano-situacion-Tampico34-Madrid.png" alt="" width=100%>
+			<!-- <img src="images/plano-situacion-Tampico34-Madrid.png" alt="" width=100%> -->
+			<?php include 'partials/mapa.php' ?>
 		</div>
 		<div class="col-12 col-md-5">
 			<form id="formulario_contacto" action="/libs/send.php" role="form" method="POST">
